@@ -1,0 +1,121 @@
+Script started on 2024-10-12 04:33:06-04:00 [TERM="xterm" TTY="/dev/pts/0" COLUMNS="151" LINES="53"]
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo systec[Kmctl status nginx
+[?2004l[sudo] password for dima: 
+[?1h=[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (]8;;file://dima-VirtualBox/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Sat 2024-10-12 04:29:03 EDT; 4min 20s ago[m
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;[m
+   Main PID: 8668 (nginx)[m
+      Tasks: 3 (limit: 9446)[m
+     Memory: 2.5M (peak: 2.8M)[m
+        CPU: 83ms[m
+     CGroup: /system.slice/nginx.service[m
+             ├─[0;38;5;245m8668 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m[m
+             ├─[0;38;5;245m8669 "nginx: worker process"[0m[m
+             └─[0;38;5;245m8670 "nginx: worker process"[0m[m
+[m
+Oct 12 04:29:03 dima-VirtualBox systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...[m
+Oct 12 04:29:03 dima-VirtualBox systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.[m
+[K[?1l>[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo systemctl status nginx[1P nginx[1P nginx[1P nginx[1P nginxo nginxp nginx
+[?2004l[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo systemctl stop nginx[Kx[C[1P nginx[1P nginx[1P nginx[1P nginxd nginxi nginxs nginxa nginxb nginxl nginxe nginx
+[?2004lSynchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable nginx
+Removed "/etc/systemd/system/multi-user.target.wants/nginx.service".
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ cp [7m/usr/lib/systemd/system/nginx.service[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/usr/lib/systemd/system/nginx.service /home/dima [K/ni[Kginx.service_old [K[K[K[Kbackup
+[?2004l[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo vi [7m/usr/lib/systemd/system/nginx.service[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/usr/lib/systemd/system/nginx.service
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;53r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[53;1H"/usr/lib/systemd/system/nginx.service" 39 lines, 1390 bytes[1;1H# Stop dance for nginx
+# =======================
+#
+# ExecStop sends SIGQUIT (graceful stop) to the nginx process.
+# If, after 5s (--retry QUIT/5) nginx is still running, systemd takes control
+# and sends SIGTERM (fast shutdown) to the main process.
+# After another 5s (TimeoutStopSec=5), and if nginx is alive, systemd sends
+# SIGKILL to all the remaining processes in the process group (KillMode=mixed).
+#
+# nginx signals reference doc:
+# http://nginx.org/en/docs/control.html
+#
+[Unit]
+Description=A high performance web server and a reverse proxy server
+Documentation=man:nginx(8)
+After=network-online.target remote-fs.target nss-lookup.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+PIDFile=/run/nginx.pid
+ExecStartPre=/usr/sbin/nginx -t -q -g 'daemon on; master_process on;'
+ExecStart=/usr/sbin/nginx -g 'daemon on; master_process on;'
+ExecReload=/usr/sbin/nginx -g 'daemon on; master_process on;' -s reload
+ExecStop=-/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid
+TimeoutStopSec=5
+KillMode=mixed
+# Hardening
+InaccessiblePaths=/etc/shadow /etc/ssh
+ProtectSystem=full
+ProtectKernelTunables=yes
+ProtectControlGroups=yes
+SystemCallFilter=~@clock @cpu-emulation @debug @keyring @module @mount @obsolete @raw-io
+MemoryDenyWriteExecute=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictRealtime=yes
+
+[Install]
+WantedBy=multi-user.target
+[1m[34m~                                                                                                                                                      [41;1H~                                                                                                                                                      [42;1H~                                                                                                                                                      [43;1H~                                                                                                                                                      [44;1H~                                                                                                                                                      [45;1H~                                                                                                                                                      [46;1H~                                                                                                                                                      [47;1H~                                                                                                                                                      [48;1H~                                                                                                                                                      [49;1H~                                                                                                                                                      [50;1H~                                                                                                                                                      [51;1H~                                                                                                                                                      [52;1H~                                                                                                                                                      [1;1H[?25h[?4m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[27;1H[26;1H[25;1H[24;1H[23;1H[22;1H[21;1H[20;1H[19;1H[18;1H[17;1H[16;1H[15;1H[14;1H[13;1H[12;1H[11;1H
+
+
+[mDescription=A high performance[?2004l[>4;m[?2004h[>4;2m=[?4m[?25l high performance web server and a reverse proxy server[14;68H[K[14;13H[?25h[?25lhigh performance web server and a reverse proxy server[14;67H[K[14;13H[?25h[?25ligh performance web server and a reverse proxy server[14;66H[K[14;13H[?25h[?25lgh performance web server and a reverse proxy server[14;65H[K[14;13H[?25h[?25lh performance web server and a reverse proxy server[14;64H[K[14;13H[?25h[?25l performance web server and a reverse proxy server[14;63H[K[14;13H[?25h[?25lperformance web server and a reverse proxy server[14;62H[K[14;13H[?25h[?25lerformance web server and a reverse proxy server[14;61H[K[14;13H[?25h[?25lrformance web server and a reverse proxy server[14;60H[K[14;13H[?25h[?25lformance web server and a reverse proxy server[14;59H[K[14;13H[?25h[?25lormance web server and a reverse proxy server[14;58H[K[14;13H[?25h[?25lrmance web server and a reverse proxy server[14;57H[K[14;13H[?25h[?25lmance web server and a reverse proxy server[14;56H[K[14;13H[?25h[?25lance web server and a reverse proxy server[14;55H[K[14;13H[?25h[?25lnce web server and a reverse proxy server[14;54H[K[14;13H[?25h[?25lce web server and a reverse proxy server[14;53H[K[14;13H[?25h[?25le web server and a reverse proxy server[14;52H[K[14;13H[?25h[?25l web server and a reverse proxy server[14;51H[K[14;13H[?25h[?25lweb server and a reverse proxy server[14;50H[K[14;13H[?25h[?25leb server and a reverse proxy server[14;49H[K[14;13H[?25h[?25lb server and a reverse proxy server[14;48H[K[14;13H[?25h[?25l server and a reverse proxy server[14;47H[K[14;13H[?25h[?25lserver and a reverse proxy server[14;46H[K[14;13H[?25h[?25lerver and a reverse proxy server[14;45H[K[14;13H[?25h[?25lrver and a reverse proxy server[14;44H[K[14;13H[?25h[?25lver and a reverse proxy server[14;43H[K[14;13H[?25h[?25ler and a reverse proxy server[14;42H[K[14;13H[?25h[?25lr and a reverse proxy server[14;41H[K[14;13H[?25h[?25l and a reverse proxy server[14;40H[K[14;13H[?25h[?25land a reverse proxy server[14;39H[K[14;13H[?25h[?25lnd a reverse proxy server[14;38H[K[14;13H[?25h[?25ld a reverse proxy server[14;37H[K[14;13H[?25h[?25l a reverse proxy server[14;36H[K[14;13H[?25h[?25la reverse proxy server[14;35H[K[14;13H[?25h[?25l reverse proxy server[14;34H[K[14;13H[?25h[?25lreverse proxy server[14;33H[K[14;13H[?25h[?25leverse proxy server[14;32H[K[14;13H[?25h[?25lverse proxy server[14;31H[K[14;13H[?25h[?25lerse proxy server[14;30H[K[14;13H[?25h[?25lrse proxy server[14;29H[K[14;13H[?25h[?25lse proxy server[14;28H[K[14;13H[?25h[?25le proxy server[14;27H[K[14;13H[?25h[?25l proxy server[14;26H[K[14;13H[?25h[?25lproxy server[14;25H[K[14;13H[?25h[?25lroxy server[14;24H[K[14;13H[?25h[?25loxy server[14;23H[K[14;13H[?25h[?25lxy server[14;22H[K[14;13H[?25h[?25ly server[14;21H[K[14;13H[?25h[?25l server[14;20H[K[14;13H[?25h[?25l[53;1H[1m[37m[41mE35: No previous regular expression[m[53;36H[K[14;13H[?25h[?25l[?25h[?2004l[>4;m[?25lN server[14;14H[?25h[?25lg server[14;15H[?25h[?25li server[14;16H[?25h[?25ln server[14;17H[?25h[?25lx server[14;18H[?25h[?25li server[14;19H[?25h[?2004h[>4;2m[?4m[?25l server[14;25H[K[14;18H[?25h[?25lserver[14;24H[K[14;18H[?25h[?25lerver[14;23H[K[14;18H[?25h[?25lrver[14;22H[K[14;18H[?25h[?25lver[14;21H[K[14;18H[?25h[?25ler[14;20H[K[14;18H[?25h[?25lr[14;19H[K[14;18H[?25h[?25l[14;18H[K[14;17H[?25h[?25l[53;1H[K[53;1H:[?25hwq![?25l[?2004l[>4;m"/usr/lib/systemd/system/nginx.service" 39 lines, 1339 bytes written[23;2t[23;1t
+[?2004l[?1l>[?1049l[23;0;0t[?25h[>4;m[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo systemctl daemon-reload 
+[?2004l[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo systemctl daemon-reload [K[K[K[K[K[K[K[K[K[K[K[K[K[Kstart nginx
+[?2004l[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo systemctl start nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginxn nginx[1P nginxe nginxn nginxa nginxble nginx
+[?2004lSynchronizing state of nginx.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable nginx
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /usr/lib/systemd/system/nginx.service.
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo systemctl enable nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginx[1P nginxs nginxt nginxa nginxt nginxu nginxs nginx
+[?2004l[?1h=[0;1;32m●[0m nginx.service - Nginx[m
+     Loaded: loaded (]8;;file://dima-VirtualBox/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)[m
+     Active: [0;1;32mactive (running)[0m since Sat 2024-10-12 04:35:32 EDT; 11s ago[m
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;[m
+   Main PID: 9853 (nginx)[m
+      Tasks: 3 (limit: 9446)[m
+     Memory: 2.5M (peak: 2.7M)[m
+        CPU: 83ms[m
+     CGroup: /system.slice/nginx.service[m
+             ├─[0;38;5;245m9853 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m[m
+             ├─[0;38;5;245m9854 "nginx: worker process"[0m[m
+             └─[0;38;5;245m9855 "nginx: worker process"[0m[m
+[m
+Oct 12 04:35:31 dima-VirtualBox systemd[1]: Starting nginx.service - Nginx...[m
+Oct 12 04:35:32 dima-VirtualBox systemd[1]: Started nginx.service - Nginx.[m
+[K[?1l>[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ exit
+[?2004lexit
+
+Script done on 2024-10-12 04:35:50-04:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,26 @@
+Script started on 2024-10-09 15:00:57-04:00 [TERM="xterm" TTY="/dev/pts/2" COLUMNS="237" LINES="63"]
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ java --version
+[?2004lopenjdk 21.0.4 2024-07-16
+OpenJDK Runtime Environment (build 21.0.4+7-Ubuntu-1ubuntu224.04)
+OpenJDK 64-Bit Server VM (build 21.0.4+7-Ubuntu-1ubuntu224.04, mixed mode, sharing)
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ update-alternatives [1@s[C[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C--config java
+[?2004l[sudo] password for dima: 
+There are 3 choices for the alternative java (providing /usr/bin/java).
+
+  Selection    Path                                         Priority   Status
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2111      auto mode
+  1            /home/dima/Downloads/jdk-23/bin/java          100       manual mode
+  2            /home/dima/Downloads/jdk-23/bin/javac         100       manual mode
+  3            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2111      manual mode
+
+Press <enter> to keep the current choice[*], or type selection number: 1
+update-alternatives: using /home/dima/Downloads/jdk-23/bin/java to provide /usr/bin/java (java) in manual mode
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ sudo update-alternatives --config java[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[24Pjava --versionexit[Kkill %1[3Pexitjava --version
+[?2004ljava 23 2024-09-17
+Java(TM) SE Runtime Environment (build 23+37-2369)
+Java HotSpot(TM) 64-Bit Server VM (build 23+37-2369, mixed mode, sharing)
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ exit
+[?2004lexit
+
+Script done on 2024-10-09 15:02:01-04:00 [COMMAND_EXIT_CODE="0"]
