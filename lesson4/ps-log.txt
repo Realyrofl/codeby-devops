@@ -1,0 +1,313 @@
+Script started on 2024-10-09 14:17:01-04:00 [TERM="xterm" TTY="/dev/pts/3" COLUMNS="185" LINES="63"]
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ ps -aux
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.1  23268 14196 ?        Ss   13:36   0:04 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    13:36   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    13:36   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-netns]
+root          11  0.0  0.0      0     0 ?        I    13:36   0:00 [kworker/u4:0-ext4-rsv-conversion]
+root          12  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    13:36   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    13:36   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    13:36   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    13:36   0:00 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    13:36   0:01 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    13:36   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    13:36   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    13:36   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    13:36   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    13:36   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    13:36   0:01 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    13:36   0:00 [ksoftirqd/1]
+root          29  0.0  0.0      0     0 ?        S    13:36   0:00 [kdevtmpfs]
+root          30  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-inet_]
+root          32  0.0  0.0      0     0 ?        S    13:36   0:00 [kauditd]
+root          33  0.0  0.0      0     0 ?        S    13:36   0:00 [khungtaskd]
+root          34  0.0  0.0      0     0 ?        S    13:36   0:00 [oom_reaper]
+root          35  0.0  0.0      0     0 ?        I    13:36   0:00 [kworker/u5:2-events_unbound]
+root          36  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-write]
+root          37  0.0  0.0      0     0 ?        S    13:36   0:00 [kcompactd0]
+root          38  0.0  0.0      0     0 ?        SN   13:36   0:00 [ksmd]
+root          40  0.0  0.0      0     0 ?        SN   13:36   0:00 [khugepaged]
+root          41  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-kinte]
+root          42  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-kbloc]
+root          43  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-blkcg]
+root          44  0.0  0.0      0     0 ?        S    13:36   0:00 [irq/9-acpi]
+root          45  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-tpm_d]
+root          46  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-ata_s]
+root          47  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-md]
+root          48  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-md_bi]
+root          49  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-edac-]
+root          50  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-devfr]
+root          51  0.0  0.0      0     0 ?        S    13:36   0:00 [watchdogd]
+root          54  0.0  0.0      0     0 ?        S    13:36   0:00 [kswapd0]
+root          55  0.0  0.0      0     0 ?        S    13:36   0:00 [ecryptfs-kthread]
+root          56  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-kthro]
+root          57  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-acpi_]
+root          58  0.0  0.0      0     0 ?        S    13:36   0:00 [scsi_eh_0]
+root          59  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-scsi_]
+root          60  0.0  0.0      0     0 ?        S    13:36   0:00 [scsi_eh_1]
+root          61  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-scsi_]
+root          64  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-mld]
+root          65  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-ipv6_]
+root          72  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-kstrp]
+root          74  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/u7:0]
+root          75  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/u8:0-ttm]
+root          76  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/u9:0-ttm]
+root          90  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-charg]
+root         139  0.0  0.0      0     0 ?        S    13:36   0:00 [scsi_eh_2]
+root         140  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-scsi_]
+root         193  0.0  0.0      0     0 ?        S    13:36   0:00 [jbd2/sda2-8]
+root         194  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-ext4-]
+root         243  0.0  0.2  67220 18020 ?        S<s  13:36   0:01 /usr/lib/systemd/systemd-journald
+root         296  0.0  0.0      0     0 ?        S    13:36   0:00 [irq/18-vmwgfx]
+root         297  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-ttm]
+root         302  0.0  0.0      0     0 ?        I    13:36   0:00 [kworker/u4:1-ext4-rsv-conversion]
+root         312  0.0  0.1  30436  8516 ?        Ss   13:36   0:00 /usr/lib/systemd/systemd-udevd
+systemd+     356  0.0  0.0  17556  7552 ?        Ss   13:36   0:01 /usr/lib/systemd/systemd-oomd
+systemd+     357  0.0  0.1  21580 13312 ?        Ss   13:36   0:00 /usr/lib/systemd/systemd-resolved
+root         362  0.0  0.0      0     0 ?        S    13:36   0:00 [psimon]
+root         556  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-iprt-]
+root         564  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/R-crypt]
+avahi        579  0.0  0.0   8668  4352 ?        Ss   13:36   0:00 avahi-daemon: running [dima-VirtualBox.local]
+message+     580  0.2  0.0  12160  7040 ?        Ss   13:36   0:05 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gnome-r+     588  0.0  0.2 512796 16380 ?        Ssl  13:36   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd      596  0.0  0.1 384584 11008 ?        Ssl  13:36   0:01 /usr/lib/polkit-1/polkitd --no-debug
+root         599  0.0  0.0 322044  7296 ?        Ssl  13:36   0:00 /usr/libexec/power-profiles-daemon
+root         617  0.4  0.4 1991056 33564 ?       Ssl  13:36   0:11 /usr/lib/snapd/snapd
+root         629  0.0  0.0 321960  7648 ?        Ssl  13:36   0:00 /usr/libexec/accounts-daemon
+root         634  0.0  0.0  18092  2688 ?        Ss   13:36   0:00 /usr/sbin/cron -f -P
+root         635  0.0  0.0 318544  6912 ?        Ssl  13:36   0:00 /usr/libexec/switcheroo-control
+root         643  0.0  0.1  18256  8832 ?        Ss   13:36   0:01 /usr/lib/systemd/systemd-logind
+root         652  0.0  0.1 469368 13744 ?        Ssl  13:36   0:00 /usr/libexec/udisks2/udisksd
+syslog       680  0.0  0.0 222564  6144 ?        Ssl  13:36   0:00 /usr/sbin/rsyslogd -n -iNONE
+avahi        693  0.0  0.0   8476  1552 ?        S    13:36   0:00 avahi-daemon: chroot helper
+root         701  0.0  0.2 344952 19144 ?        Ssl  13:36   0:00 /usr/sbin/NetworkManager --no-daemon
+root         704  0.0  0.0  17376  6272 ?        Ss   13:36   0:00 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+root         758  0.0  0.1 392096 12868 ?        Ssl  13:36   0:00 /usr/sbin/ModemManager
+root        1204  0.0  0.1  46920 12032 ?        Ss   13:36   0:00 /usr/sbin/cupsd -l
+root        1208  0.3  0.0 364316  2560 ?        Sl   13:36   0:08 /usr/bin/VBoxDRMClient
+root        1213  0.1  0.0 304452  3852 ?        Sl   13:36   0:03 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+root        1230  0.0  0.2 120900 22784 ?        Ssl  13:36   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+lp          1261  0.0  0.0  16836  6784 ?        S    13:36   0:00 /usr/lib/cups/notifier/dbus dbus://
+cups-br+    1267  0.0  0.2 268396 19968 ?        Ssl  13:36   0:00 /usr/sbin/cups-browsed
+root        1271  0.0  0.0      0     0 ?        I<   13:36   0:00 [kworker/u8:1-ttm]
+kernoops    1279  0.0  0.0  12744  2444 ?        Ss   13:36   0:00 /usr/sbin/kerneloops --test
+root        1282  0.0  0.1 323492  9344 ?        Ssl  13:36   0:00 /usr/sbin/gdm3
+kernoops    1294  0.0  0.0  12744  2312 ?        Ss   13:36   0:00 /usr/sbin/kerneloops
+rtkit       1398  0.0  0.0  22940  3456 ?        SNsl 13:36   0:00 /usr/libexec/rtkit-daemon
+colord      1491  0.0  0.1 328724 14252 ?        Ssl  13:36   0:00 /usr/libexec/colord
+root        1527  0.0  0.1 325328  9088 ?        Ssl  13:36   0:00 /usr/libexec/upowerd
+root        1865  0.0  0.1 251252 10368 ?        Sl   13:37   0:00 gdm-session-worker [pam/gdm-password]
+dima        1875  0.0  0.1  21636 12800 ?        Ss   13:37   0:01 /usr/lib/systemd/systemd --user
+dima        1879  0.0  0.0  21456  3736 ?        S    13:37   0:00 (sd-pam)
+dima        1895  0.0  0.1 122184 12672 ?        S<sl 13:37   0:00 /usr/bin/pipewire
+dima        1897  0.0  0.0 106404  5888 ?        Ssl  13:37   0:00 /usr/bin/pipewire -c filter-chain.conf
+dima        1904  0.0  0.2 415568 18688 ?        S<sl 13:37   0:00 /usr/bin/wireplumber
+dima        1910  0.0  0.1 118916 11392 ?        S<sl 13:37   0:00 /usr/bin/pipewire-pulse
+dima        1913  0.0  0.0  10744  6400 ?        Ss   13:37   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+dima        1917  0.0  0.1 325176  9984 ?        SLsl 13:37   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+dima        1918  0.0  0.0 619992  7424 ?        Ssl  13:37   0:00 /usr/libexec/xdg-document-portal
+dima        1929  0.0  0.0 317976  6016 ?        Ssl  13:37   0:00 /usr/libexec/xdg-permission-store
+root        1949  0.0  0.0   2704  1920 ?        Ss   13:37   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+dima        1974  0.0  0.0 244336  5888 tty2     Ssl+ 13:37   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+dima        1979  0.0  0.2 306868 16384 tty2     Sl+  13:37   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+dima        2047  0.0  0.0 162652  6784 ?        Ssl  13:37   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+dima        2048  0.0  0.0 100216  5632 ?        Ssl  13:37   0:00 /usr/libexec/gnome-session-ctl --monitor
+dima        2064  0.0  0.0 322944  7936 ?        Ssl  13:37   0:00 /usr/libexec/gvfsd
+dima        2075  0.0  0.0 468380  7168 ?        Sl   13:37   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+dima        2078  0.0  0.2 742124 18176 ?        Ssl  13:37   0:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+dima        2112  1.4  4.2 3879296 345020 ?      Ssl  13:37   0:33 /usr/bin/gnome-shell
+dima        2113  0.0  0.0 382940  7936 ?        Sl   13:37   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+dima        2125  0.0  0.0   9476  4992 ?        S    13:37   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --addres
+dima        2178  0.0  0.0 236068  7552 ?        Sl   13:37   0:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+dima        2188  0.0  0.2 655836 21808 ?        Sl   13:37   0:00 /usr/libexec/gnome-shell-calendar-server
+dima        2205  0.0  0.5 660532 42240 ?        Ssl  13:37   0:00 /usr/libexec/evolution-source-registry
+dima        2208  0.0  0.3 2536200 26848 ?       Sl   13:37   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+dima        2214  0.0  0.1 397504 12100 ?        Ssl  13:37   0:00 /usr/bin/ibus-daemon --panel disable
+dima        2215  0.0  0.0 392188  6528 ?        Ssl  13:37   0:00 /usr/libexec/gsd-a11y-settings
+dima        2218  0.0  0.2 421632 20524 ?        Ssl  13:37   0:00 /usr/libexec/gsd-color
+dima        2219  0.0  0.1 440332 12160 ?        Ssl  13:37   0:00 /usr/libexec/gsd-datetime
+dima        2221  0.0  0.0 467412  7808 ?        Ssl  13:37   0:00 /usr/libexec/gsd-housekeeping
+dima        2224  0.0  0.2 494160 19904 ?        Ssl  13:37   0:00 /usr/libexec/gsd-keyboard
+dima        2226  0.0  0.3 602836 25332 ?        Ssl  13:37   0:00 /usr/libexec/gsd-media-keys
+dima        2239  0.0  0.2 605920 24352 ?        Ssl  13:37   0:00 /usr/libexec/gsd-power
+dima        2240  0.0  0.1 332312 11520 ?        Ssl  13:37   0:00 /usr/libexec/gsd-print-notifications
+dima        2241  0.0  0.0 539752  6528 ?        Ssl  13:37   0:00 /usr/libexec/gsd-rfkill
+dima        2242  0.0  0.0 318228  6016 ?        Ssl  13:37   0:00 /usr/libexec/gsd-screensaver-proxy
+dima        2245  0.0  0.0 305624  7168 ?        Sl   13:37   0:00 /usr/libexec/gsd-disk-utility-notify
+dima        2246  0.0  0.1 551864 11776 ?        Ssl  13:37   0:00 /usr/libexec/gsd-sharing
+dima        2250  0.0  0.1 394488  8192 ?        Ssl  13:37   0:00 /usr/libexec/gsd-smartcard
+dima        2255  0.0  0.1 402308  9728 ?        Ssl  13:37   0:00 /usr/libexec/gsd-sound
+dima        2256  0.0  0.2 495128 20704 ?        Ssl  13:37   0:00 /usr/libexec/gsd-wacom
+dima        2277  0.0  0.7 817792 62596 ?        Sl   13:37   0:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+dima        2406  0.0  0.1 424872 14976 ?        Sl   13:37   0:00 /usr/libexec/gsd-printer
+dima        2410  0.0  0.0 319136  7168 ?        Sl   13:37   0:00 /usr/libexec/ibus-dconf
+dima        2411  0.0  0.1 397988 10368 ?        Ssl  13:37   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+dima        2416  0.1  0.3 430216 29672 ?        Sl   13:37   0:02 /usr/libexec/ibus-extension-gtk3
+dima        2437  0.0  0.2 555316 24064 ?        Sl   13:37   0:00 /usr/libexec/goa-daemon
+dima        2440  0.0  0.0 319096  7040 ?        Sl   13:37   0:00 /usr/libexec/ibus-portal
+dima        2506  0.0  0.1 397796  9216 ?        Sl   13:37   0:00 /usr/libexec/goa-identity-service
+dima        2507  0.0  0.3 899392 24448 ?        Ssl  13:37   0:00 /usr/libexec/evolution-calendar-factory
+dima        2509  0.0  0.0 319428  6912 ?        Ssl  13:37   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+dima        2527  0.0  0.0 318460  6400 ?        Ssl  13:37   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+dima        2533  0.0  0.0 398044  8064 ?        Ssl  13:37   0:00 /usr/libexec/gvfs-afc-volume-monitor
+dima        2551  0.0  0.0 318440  6656 ?        Ssl  13:37   0:00 /usr/libexec/gvfs-goa-volume-monitor
+dima        2554  0.0  0.3 760224 29696 ?        Ssl  13:37   0:00 /usr/libexec/evolution-addressbook-factory
+dima        2568  0.0  0.7 216444 59068 ?        S    13:37   0:00 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.KMY6U2 -listenfd 4 -l
+dima        2587  0.0  0.0 245440  7424 ?        Sl   13:37   0:00 /usr/libexec/ibus-engine-simple
+dima        2610  0.0  0.0 230108  5632 ?        Ssl  13:37   0:00 /usr/libexec/dconf-service
+dima        2621  0.0  0.1 544380  8960 ?        Sl   13:37   0:00 /usr/libexec/gvfsd-trash --spawner :1.19 /org/gtk/gvfs/exec_spaw/0
+dima        2652  0.0  0.9 622580 75220 ?        Ssl  13:37   0:00 /usr/libexec/gsd-xsettings
+dima        2691  0.0  0.3 2536096 27168 ?       Sl   13:37   0:00 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+root        2697  0.0  0.0      0     0 ?        I<   13:37   0:00 [kworker/u9:1]
+dima        2719  0.0  0.1 710280 14060 ?        Ssl  13:37   0:00 /usr/libexec/xdg-desktop-portal
+dima        2768  0.0  0.2 275780 24388 ?        Sl   13:38   0:00 /usr/libexec/ibus-x11
+dima        2770  0.0  0.3 890780 30500 ?        SNsl 13:38   0:00 /usr/libexec/tracker-miner-fs-3
+dima        2771  0.0  0.4 565056 40644 ?        Ssl  13:38   0:00 /usr/libexec/xdg-desktop-portal-gnome
+dima        2774  0.0  0.0 244972  6400 ?        Ssl  13:38   0:00 /usr/libexec/gvfsd-metadata
+dima        2782  0.0  1.1 1098488 89548 ?       Sl   13:38   0:00 /usr/libexec/mutter-x11-frames
+dima        2790  0.0  0.0  28120  1448 ?        S    13:38   0:00 /usr/bin/VBoxClient --clipboard
+dima        2791  0.0  0.6 235444 55156 ?        Sl   13:38   0:00 /usr/bin/VBoxClient --clipboard
+dima        2817  0.0  0.0  28120  1448 ?        S    13:38   0:00 /usr/bin/VBoxClient --vmsvga-session
+dima        2819  0.0  0.0 160224  2344 ?        Sl   13:38   0:01 /usr/bin/VBoxClient --vmsvga-session
+dima        2856  0.0  0.3 426412 26072 ?        Ssl  13:38   0:00 /usr/libexec/xdg-desktop-portal-gtk
+dima        2917  0.0  0.3 500908 28420 ?        Sl   13:38   0:00 /usr/bin/update-notifier
+dima        2966  0.0  0.7 709104 57452 ?        Ssl  13:39   0:02 /usr/libexec/gnome-terminal-server
+dima        2974  0.0  0.0  19932  5248 pts/0    Ss+  13:39   0:00 bash
+dima        2994  0.0  0.0  19932  5376 pts/1    Ss+  13:39   0:00 bash
+root        3004  0.0  0.0  12020  7936 ?        Ss   13:40   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+root        3007  0.0  0.1  15400  8176 ?        Ss   13:40   0:00 sshd: dima [priv]
+dima        3077  0.0  0.0  15400  7052 ?        S    13:40   0:01 sshd: dima@pts/2
+dima        3078  0.0  0.0  21232  6528 pts/2    Ss+  13:40   0:00 -bash
+root        3122  0.0  0.0      0     0 ?        I<   13:40   0:00 [kworker/R-tls-s]
+root        3317  0.0  0.0      0     0 ?        I    13:46   0:00 [kworker/u6:1-events_unbound]
+root        3343  0.0  0.0      0     0 ?        I    13:47   0:00 [kworker/u5:3-events_unbound]
+root        3850  0.0  0.0      0     0 ?        S    13:47   0:00 [psimon]
+root        3872  0.0  0.0      0     0 ?        I    13:47   0:01 [kworker/1:1-events]
+dima        3927  0.0  0.1  39128 11904 ?        Ss   13:47   0:00 /snap/snapd-desktop-integration/247/usr/bin/snapd-desktop-integration
+dima        4064  0.0  0.3 429584 31552 ?        Sl   13:47   0:00 /snap/snapd-desktop-integration/247/usr/bin/snapd-desktop-integration
+root        4079  0.0  0.0      0     0 ?        I<   13:47   0:00 [kworker/0:1H-kblockd]
+root        4096  0.0  0.0      0     0 ?        I<   13:48   0:00 [kworker/1:1H-kblockd]
+root        4136  0.1  0.0      0     0 ?        I    13:50   0:02 [kworker/0:3-cgroup_destroy]
+root        4227  0.0  0.0      0     0 ?        I<   13:55   0:00 [kworker/0:2H]
+root        4232  0.0  0.0      0     0 ?        I    13:57   0:00 [kworker/u6:0-events_unbound]
+root        4299  0.0  0.0      0     0 ?        I    14:00   0:00 [kworker/1:2]
+root        4314  0.0  0.0      0     0 ?        I    14:05   0:00 [kworker/u5:1-events_power_efficient]
+root        4321  0.0  0.0      0     0 ?        I    14:05   0:00 [kworker/u6:2-events_unbound]
+root        4322  0.0  0.0      0     0 ?        I<   14:05   0:00 [kworker/1:2H]
+root        4358  0.2  0.0      0     0 ?        I    14:09   0:01 [kworker/0:1-mm_percpu_wq]
+root        4368  0.0  0.0      0     0 ?        I<   14:12   0:00 [kworker/1:0H]
+root        4389  0.0  0.0      0     0 ?        I    14:14   0:00 [kworker/u6:3-flush-8:0]
+root        4410  0.0  0.1  15272  8304 ?        Ss   14:15   0:00 sshd: dima [priv]
+root        4442  0.4  0.4 485992 38332 ?        Ssl  14:16   0:00 /usr/libexec/fwupd/fwupd
+dima        4459  0.1  0.0  15432  6920 ?        S    14:16   0:00 sshd: dima@pts/3
+dima        4460  0.1  0.0  19920  5376 pts/3    Ss   14:16   0:00 -bash
+root        4479  0.0  0.0      0     0 ?        I    14:16   0:00 [kworker/0:0-mm_percpu_wq]
+dima        4486  0.0  0.0  16972  2176 pts/3    S+   14:17   0:00 script
+dima        4487  0.1  0.0  19924  5376 pts/4    Ss   14:17   0:00 bash -i
+dima        4494  1.1  0.3 409036 29708 ?        SNl  14:17   0:00 /usr/libexec/tracker-extract-3 --socket-fd 3
+dima        4500  200  0.0  23640  5504 pts/4    R+   14:17   0:00 ps -aux
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ ps -u dima
+[?2004l    PID TTY          TIME CMD
+   1875 ?        00:00:01 systemd
+   1879 ?        00:00:00 (sd-pam)
+   1895 ?        00:00:00 pipewire
+   1897 ?        00:00:00 pipewire
+   1904 ?        00:00:00 wireplumber
+   1910 ?        00:00:00 pipewire-pulse
+   1913 ?        00:00:01 dbus-daemon
+   1917 ?        00:00:00 gnome-keyring-d
+   1918 ?        00:00:00 xdg-document-po
+   1929 ?        00:00:00 xdg-permission-
+   1974 tty2     00:00:00 gdm-wayland-ses
+   1979 tty2     00:00:00 gnome-session-b
+   2047 ?        00:00:00 gcr-ssh-agent
+   2048 ?        00:00:00 gnome-session-c
+   2064 ?        00:00:00 gvfsd
+   2075 ?        00:00:00 gvfsd-fuse
+   2078 ?        00:00:00 gnome-session-b
+   2112 ?        00:00:33 gnome-shell
+   2113 ?        00:00:00 at-spi-bus-laun
+   2125 ?        00:00:00 dbus-daemon
+   2178 ?        00:00:00 at-spi2-registr
+   2188 ?        00:00:00 gnome-shell-cal
+   2205 ?        00:00:00 evolution-sourc
+   2208 ?        00:00:00 gjs
+   2214 ?        00:00:00 ibus-daemon
+   2215 ?        00:00:00 gsd-a11y-settin
+   2218 ?        00:00:00 gsd-color
+   2219 ?        00:00:00 gsd-datetime
+   2221 ?        00:00:00 gsd-housekeepin
+   2224 ?        00:00:00 gsd-keyboard
+   2226 ?        00:00:00 gsd-media-keys
+   2239 ?        00:00:00 gsd-power
+   2240 ?        00:00:00 gsd-print-notif
+   2241 ?        00:00:00 gsd-rfkill
+   2242 ?        00:00:00 gsd-screensaver
+   2245 ?        00:00:00 gsd-disk-utilit
+   2246 ?        00:00:00 gsd-sharing
+   2250 ?        00:00:00 gsd-smartcard
+   2255 ?        00:00:00 gsd-sound
+   2256 ?        00:00:00 gsd-wacom
+   2277 ?        00:00:00 evolution-alarm
+   2406 ?        00:00:00 gsd-printer
+   2410 ?        00:00:00 ibus-dconf
+   2411 ?        00:00:00 gvfs-udisks2-vo
+   2416 ?        00:00:02 ibus-extension-
+   2437 ?        00:00:00 goa-daemon
+   2440 ?        00:00:00 ibus-portal
+   2506 ?        00:00:00 goa-identity-se
+   2507 ?        00:00:00 evolution-calen
+   2509 ?        00:00:00 gvfs-gphoto2-vo
+   2527 ?        00:00:00 gvfs-mtp-volume
+   2533 ?        00:00:00 gvfs-afc-volume
+   2551 ?        00:00:00 gvfs-goa-volume
+   2554 ?        00:00:00 evolution-addre
+   2568 ?        00:00:00 Xwayland
+   2587 ?        00:00:00 ibus-engine-sim
+   2610 ?        00:00:00 dconf-service
+   2621 ?        00:00:00 gvfsd-trash
+   2652 ?        00:00:00 gsd-xsettings
+   2691 ?        00:00:00 gjs
+   2719 ?        00:00:00 xdg-desktop-por
+   2768 ?        00:00:00 ibus-x11
+   2770 ?        00:00:00 tracker-miner-f
+   2771 ?        00:00:00 xdg-desktop-por
+   2774 ?        00:00:00 gvfsd-metadata
+   2782 ?        00:00:00 mutter-x11-fram
+   2790 ?        00:00:00 VBoxClient
+   2791 ?        00:00:00 VBoxClient
+   2817 ?        00:00:00 VBoxClient
+   2819 ?        00:00:01 VBoxClient
+   2856 ?        00:00:00 xdg-desktop-por
+   2917 ?        00:00:00 update-notifier
+   2966 ?        00:00:02 gnome-terminal-
+   2974 pts/0    00:00:00 bash
+   2994 pts/1    00:00:00 bash
+   3077 ?        00:00:01 sshd
+   3078 pts/2    00:00:00 bash
+   3927 ?        00:00:00 snapd-desktop-i
+   4064 ?        00:00:00 snapd-desktop-i
+   4459 ?        00:00:00 sshd
+   4460 pts/3    00:00:00 bash
+   4486 pts/3    00:00:00 script
+   4487 pts/4    00:00:00 bash
+   4502 pts/4    00:00:00 ps
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ top&
+[?2004l[1] 4503
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ [?1l>jobs
+[?2004l[1]+  Stopped                 top
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ kill %1
+[?2004l
+[1]+  Stopped                 top
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ [?1l>
+
+[?2004l[1]+  Done                    top
+[?2004h]0;dima@dima-VirtualBox: ~dima@dima-VirtualBox:~$ exit
+[?2004lexit
+
+Script done on 2024-10-09 14:17:36-04:00 [COMMAND_EXIT_CODE="0"]
