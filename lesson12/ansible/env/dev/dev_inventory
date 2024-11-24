@@ -1,0 +1,5 @@
+[servers]
+dev ansible_host=192.168.56.111
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
